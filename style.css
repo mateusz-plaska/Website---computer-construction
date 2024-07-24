@@ -1,0 +1,223 @@
+  *{
+	 margin: 0;
+	 padding: 0;
+	 font-family: 'Roboto Mono', monospace;
+	 box-sizing: border-box;
+   }
+  
+  body {background-color: #ddb;} 
+  
+  #main
+  {
+	  max-width: 1000px;
+	  margin: 0 auto 0 auto;
+	  background-color: white;
+  }
+  
+  header img 
+  {
+	  width: 100%; 
+	  display: block;
+  }
+  
+  nav 
+  {
+	  background-color: darkcyan;
+  }
+  
+  nav ol {
+        list-style-type:none;
+        background-color:#FFF;
+        font-size:18px;
+        text-align:center;
+		-webkit-transition: all 1s ease;
+	    transition: all 1s ease;
+      }
+
+      /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+    nav  ol a {
+        display:block;
+        text-decoration:none;
+        color: white;
+		padding: 16px 0;
+		-webkit-transition: all 1s ease;
+	    transition: all 1s ease;
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+    nav  ol > li {
+        float:left;
+        width:25%;
+        margin-left:0;
+        background-color:darkcyan;
+		height: 80px;
+      }
+
+      /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+     nav ol > li:first-child {
+        margin-left:0;
+      }
+
+     
+
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+    nav  ol > li:hover > ul {
+        display:block;
+      }
+  
+  
+    nav ol > li:first-child {
+        margin-left:0;
+      }
+	  
+    nav ol > li:hover > ul {
+        display:block;
+      }
+	  
+    nav ol > li > ul {
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej */
+    nav  ol > li > ul > li {
+        position:relative;
+        background-color:darkcyan;
+		-webkit-transition: all 1s ease;
+	    transition: all 1s ease;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej */
+    nav  ol > li > ul > li > a {
+        text-decoration: none;
+		color: white;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+    nav ol > li > ul > li:hover {
+        background-color: crimson;
+		-webkit-transition: all 1s ease;
+	    transition: all 1s ease;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+    nav  ol > li > ul > li:hover > a {
+        color: black;
+      }
+  
+  a.menu:hover
+  { 
+	  background-color: crimson;
+	  cursor: pointer;
+  }
+  
+  .active
+  {
+	  background-color: crimson;
+  }  
+  
+  article
+  {
+	  margin-top: 30px;
+	  margin-bottom: 30px;
+	  padding: 0 35px;
+  }
+  
+  article h1
+  {
+	  font-size: 30px;
+	  text-align: center;
+	  margin: 12% 13% 20px 13%;
+	  padding-bottom: 15px;
+	  border-bottom: 2px solid crimson;
+  }
+  
+  .info
+  {
+	  font-size: 20px;
+	  margin: 9% 0 9px 20px
+  }
+  
+  img.zdjecie
+  {
+	  width: 70%;
+  }
+  
+  img.right
+  {
+	  float: right;
+	  width: 55%;
+  }
+  
+  p.right
+  {
+	  padding-left: 500px;
+	  font-size: 12px;
+  }
+  
+  p.center
+  {
+	  padding-left: 300px;
+	  font-size: 12px;
+  }
+  
+  article.procesor
+  {
+	  
+  }
+  
+  article p
+  {
+	  text-align: justify;
+	  line-height: 30px;
+	  font-size: 18px;
+	  padding: 15px 0;
+  }
+  
+  img.middle
+  {
+	  width: 70%;
+  }
+  
+  .elementy
+  {
+	  text-align: justify;
+	  line-height: 45px;
+	  margin: 15px 0 0 100px;
+  }
+  
+  .peryferia
+  {
+	  text-align: justify;
+	  line-height: 30px;
+	  margin: 5px 0 0 40px;
+	  font-size: 18px;
+  }
+  
+  footer
+  {
+	  text-align: center;
+	  font-size: 15px;
+	  font-family: arial;
+	  padding: 10px 0 0 0;
+	  background-color: darkcyan;
+  }
+ 
+  @media (max-width: 800px)
+  {
+	  nav a
+	  {
+		width: 50%;  
+	  }
+  }
+  
+  @media (max-width: 500px)
+  {
+	  nav a
+	  {
+		  width: 100%;
+	  }
+  }
+ 
